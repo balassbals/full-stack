@@ -1,0 +1,78 @@
+/* base styles */
+* {
+	box-sizing: border-box;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 28px
+}
+.row{
+	width: 100%;
+}
+section > h2 {
+	/*float: right;*/
+	position: absolute;
+	right: 0;
+	border: 1px solid black;
+	border-width: thick;
+	margin-top: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 20px;
+   /*margin-bottom: 0px;*/	
+}
+section {
+	border: 1px solid black;
+	border-width: thick;
+	background-color: #888888;
+	width: 90%;
+	height: 190px;
+	font-family: helevitica;
+	position: relative;		
+}
+#idli {
+	background-color: pink;
+}
+#dosa {
+	background-color: red;
+	color: white;
+}
+#poori {
+	background-color: yellow;
+}
+p {
+	clear: right;	
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 16px;
+	margin-top: 40px;	
+}
+
+/***************Desktops**************/
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/***************Tablets**************/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6{
+		float: left;
+		width: 50%;
+	}
+	#ps {
+		width: 190%;
+		clear: left;
+		margin-top: 20px;
+	}
+}
+
+/***************Mobile Phones**************/
+@media (max-width: 767px) {
+	.col-sm-12{
+		margin-bottom: 20px;
+	}
+}
